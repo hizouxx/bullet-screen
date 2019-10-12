@@ -1,0 +1,21 @@
+<!--miniprogram/pages/picture/pictrue.wxml-->
+
+
+
+<view class="container">
+
+  <button class="upload" bindtap="upload">上传相册</button>
+
+  <view class="list">
+    <view class="list-item" wx:for="{{ pictures }}" wx:key="{{ index }}" >
+      <view class="list-item-datetime">{{ item.datetime }}</view>
+      <view class="list-item-imgs">
+        <image class="img" wx:for="{{ item.list }}" wx:key="{{ index }}" src="{{ item.tempFileURL }}" mode="aspectFill"></image>
+      </view>
+    </view>
+  </view>
+
+
+</view>
+
+

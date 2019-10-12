@@ -1,0 +1,10 @@
+<!--miniprogram/pages/picture/pictrue.wxml-->
+
+<view class="container">
+  <view class="list">
+    <image class="list-item" wx:for="{{ filePaths }}" wx:key="{{ index }}" mode="aspectFill"  src="{{ item }}"></image>
+    <view class="list-choose" bindtap="chooseImage">+</view>
+  </view>
+
+  <button class="upload" bindtap="doUpload">上传图片</button>
+</view>

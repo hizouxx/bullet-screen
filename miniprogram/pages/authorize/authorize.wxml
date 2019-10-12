@@ -1,0 +1,7 @@
+<!---->
+<view class="container">
+  <view class="note">小程序获取头像、昵称、性别等基本信息后，即可体验完整功能</view>
+  <button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">
+    授权登录
+  </button>
+</view>

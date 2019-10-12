@@ -1,0 +1,12 @@
+<!--弹幕详情列表-->
+<view class="list">
+  <view class="list-item" wx:for="{{ baseData }}" wx:key="{{ item._id }}">
+    <image class='list-item-avatar' src='{{ item.avatarUrl }}' mode='aspectFit'></image>
+    <view class="list-item-right">
+      <view class="list-item-right-nickname">{{item.nickName}}</view>
+      <view class="list-item-right-content">{{item.content}}</view>
+      <view class="list-item-right-datetime">{{item.datetime}}</view>
+      <!-- <view class="list-item-right-like">{{item.like}}</view> -->
+    </view>
+  </view>
+</view>

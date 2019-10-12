@@ -1,0 +1,12 @@
+<!--add.wxml-->
+<view class="container">
+  <image class="add-bg" src="{{ bgImage }}"></image>
+  <view class="add-dm">
+    <input
+      class="add-dm-input"
+      value="{{ dmValue }}"
+      bindinput="bindKeyInput"
+    ></input>
+    <view class="add-dm-btn" plain bindtap="bindconfirm">发送</view>
+  </view>
+</view>

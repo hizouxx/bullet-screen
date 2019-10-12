@@ -1,0 +1,42 @@
+.container{
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.add-bg{
+  width: 750rpx;
+  height: 1218rpx;
+}
+
+.add-dm{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  padding: 20rpx 30rpx;
+  border-top: 1rpx solid #e6e6e6;
+  background-color: #f6f6f6;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.add-dm-input{
+  height: 80rpx;
+  flex-grow: 1;
+  flex-shrink: 1;
+  border-radius: 10rpx;
+  background-color: #fff;
+  padding-left: 10rpx;
+  border: 1rpx solid #e6e6e6;
+}
+.add-dm-btn{
+  margin-left: 20rpx;
+  width: 120rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border-radius: 8rpx;
+  border: 1rpx solid #e6e6e6;
+  background-color: #fff;
+}

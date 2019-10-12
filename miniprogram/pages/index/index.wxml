@@ -1,0 +1,44 @@
+<!--弹幕-->
+<view class="container">
+
+  <image class="background" src="{{ bgImages[curBgImageIndex] }}"></image>
+  <switch class="switch" color="#2c2c2c" bindchange="switchChange" />
+  <view class="bulletscreen">
+
+    <!-- 有序弹幕 -->
+    <view class="ordered" wx:if="{{orderedList.length > 0}}">
+      <view
+        class='ordered-group' wx:for="{{ orderedList }}" wx:key="{{ index }}"
+        style="animation: dmAnimation 20s linear infinite; top: {{200 + index * 60}}rpx;"
+        bindtap="interList">
+        <view class='ordered-group-list' wx:for="{{ item }}" wx:key="{{ item.id }}">
+          <view class='group-list-item'>
+            <view class='group-list-item-avatar'>
+              <image src='{{ item.avatarUrl }}' class='avatar' mode='aspectFit'></image>
+              <image src='{{ item.gender == 1 ? iconBoy : iconGirl }}' class='gender' mode='aspectFit'></image>
+            </view>
+            <text class='group-list-item-content'>{{ item.content }}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 无序弹幕 -->
+    <view class="disorder" wx:if="{{disorderList.length > 0}}">
+      <view
+        class='disorder-group' wx:for="{{ disorderList }}" wx:key="{{ item.id }}"
+        style="top:{{ item.top }}%; animation: dmAnimation2 {{item.time}}s linear {{ index*3 }}s infinite; "
+        bindtap="interList">
+        <view class='group-list-item'>
+          <view class='group-list-item-avatar'>
+            <image src='{{ item.avatarUrl }}' class='avatar' mode='aspectFit'></image>
+            <image src='{{ item.gender == 1 ? iconBoy : iconGirl }}' class='gender' mode='aspectFit'></image>
+          </view>
+          <text class='group-list-item-content'>{{ item.content }}</text>
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+</view>

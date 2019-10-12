@@ -1,0 +1,34 @@
+<!--miniprogram/pages/logs.wxml-->
+
+<view class="container">
+  <view
+    class="log-list"
+    wx:for="{{ logs }}"
+    wx:key="{{ index }}">
+    <view class="log-list-versionnumber">{{ item.version_number }} </view>
+    <text class="log-list-date">{{ item.date }}</text>
+    
+    <view class="log-list-detail">
+      <view class="log-list-detail-tit">Improvements</view>
+      <view
+        class="log-list-detail-con"
+        wx:for="{{ item.improvements }}"
+        wx:key="{{ index }}"
+      >
+        • {{ item }}
+      </view>
+    </view>
+
+    <view class="log-list-detail">
+      <view class="log-list-detail-tit">Bug Fixes</view>
+      <view
+        class="log-list-detail-con"
+        wx:for="{{ item.bug_fixes }}"
+        wx:key="{{ index }}"
+      >
+        • {{ item }}
+      </view>
+    </view>
+    
+  </view>
+</view>

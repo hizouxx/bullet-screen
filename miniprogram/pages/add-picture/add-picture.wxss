@@ -1,0 +1,33 @@
+/* miniprogram/pages/picture/pictrue.wxss */
+.container{
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.list{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30rpx;
+}
+
+.list-item, .list-choose{
+  height: 220rpx;
+  width: 220rpx;
+  border: 1rpx solid #c2c2c2;
+  margin: 0 0 10rpx 10rpx;
+}
+
+ .list-choose{
+  text-align: center;
+  font-size: 100rpx;
+  color: #c2c2c2;
+  line-height: 200rpx;
+ }
+
+ .upload{
+  position: absolute;
+  bottom: 20rpx;
+  left: 30rpx;
+  right: 30rpx;
+ }

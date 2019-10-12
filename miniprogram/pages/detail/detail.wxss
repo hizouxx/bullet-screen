@@ -1,0 +1,28 @@
+/*  */
+.list{
+  background-color: #fcfcfc;
+}
+.list-item{
+  display: flex;
+  padding: 30rpx 20rpx;
+  border-bottom: 1rpx solid #f3f3f3;
+}
+.list-item-avatar{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 6rpx;
+}
+.list-item-right{
+  margin-left: 20rpx;
+}
+.list-item-right-nickname{
+  font-size: 32rpx;
+}
+.list-item-right-content{
+  font-size: 30rpx;
+  color: #3a3a3a;
+}
+.list-item-right-datetime{
+  font-size: 24rpx;
+  color: #a8a8a8;
+}

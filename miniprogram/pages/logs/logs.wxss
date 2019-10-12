@@ -1,0 +1,35 @@
+/* pages/logs/logs.wxss */
+Page{
+  background-color: #f6f6f6;
+}
+.container{
+  padding: 20rpx 30rpx 0;
+}
+.log-list{
+  margin-bottom: 20rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  padding: 20rpx 30rpx;
+}
+.log-list-versionnumber{
+  line-height: 2;
+  font-weight: bold;
+}
+.log-list-date{
+  font-size: 20rpx;
+  padding: 4rpx 8rpx;
+  border-radius: 4rpx;
+  border: 1rpx solid #707070;
+  color: #707070;
+}
+.log-list-detail{
+  margin-top: 10rpx;
+}
+.log-list-detail-tit{
+  line-height: 2;
+}
+.log-list-detail-con{
+  font-size: 26rpx;
+  color: #707070;
+  padding-left: 30rpx;
+}

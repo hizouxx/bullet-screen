@@ -1,0 +1,10 @@
+/* miniprogram/pages/authorize/authorize.wxss */
+
+.container{
+  height: 100%;
+  background-color: #fcfcfc;
+  padding: 30rpx 50rpx 0;
+}
+.note{
+  margin-bottom: 100rpx;
+}

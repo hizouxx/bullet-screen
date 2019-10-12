@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/add-picture/add-picture",
+    "pages/pictures/pictures",
+    "pages/authorize/authorize",
+    "pages/detail/detail",
+    "pages/add-bulletscreen/add-bulletscreen",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundColor": "#f6f6f6",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "弹幕biu",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#2c2c2c",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "./images/tabbar-dm.png",
+        "selectedIconPath": "./images/tabbar-dm-active.png",
+        "text": "弹幕"
+      },
+      {
+        "pagePath": "pages/add-bulletscreen/add-bulletscreen",
+        "iconPath": "./images/tabbar-add.png",
+        "selectedIconPath": "./images/tabbar-add-active.png",
+        "text": "来一发"
+      },
+      {
+        "pagePath": "pages/pictures/pictures",
+        "iconPath": "./images/tabbar-picture.png",
+        "selectedIconPath": "./images/tabbar-picture-active.png",
+        "text": "相册"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "./images/tabbar-logs.png",
+        "selectedIconPath": "./images/tabbar-logs-active.png",
+        "text": "日志"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
